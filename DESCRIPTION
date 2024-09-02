@@ -1,0 +1,10 @@
+Package: drawmap
+Type: Package
+Title: Draw Maps in R
+Version: 0.1.0
+Author: Eirik Tengesdal
+Maintainer: Eirik Tengesdal <eirik.tengesdal@oslomet.no>
+Description: The functions facilitate drawing maps with `ggplot2` and `sf` data.
+License: MIT
+Encoding: UTF-8
+LazyData: true
