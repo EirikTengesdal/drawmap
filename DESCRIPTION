@@ -8,3 +8,5 @@ Description: The functions facilitate drawing maps with `ggplot2` and `sf` data.
 License: MIT
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/EirikTengesdal/drawmap
+BugReports: https://github.com/EirikTengesdal/drawmap/issues
