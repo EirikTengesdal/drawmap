@@ -50,5 +50,5 @@ url = "https://geo.stat.fi/geoserver/tilastointialueet/wfs",
 typename = "tilastointialueet:kunta1000k")
 }
 \seealso{
-[browse_wfsdata()], [load_wfsdata()]
+\code{browse_wfsdata()}, \code{load_wfsdata()}
 }

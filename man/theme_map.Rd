@@ -16,5 +16,5 @@ theme_map(font = "", size = 12)
 plot drawn with \code{draw()}.
 }
 \seealso{
-[draw()]
+\code{draw()}
 }

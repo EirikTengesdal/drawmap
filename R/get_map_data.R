@@ -22,7 +22,7 @@
 #' @return An \code{sf} object
 #' @export
 #'
-#' @seealso [browse_wfsdata()], [load_wfsdata()]
+#' @seealso \code{browse_wfsdata()}, \code{load_wfsdata()}
 #' @examples
 #' finland_municipalities <- get_map_data(
 #' url = "https://geo.stat.fi/geoserver/tilastointialueet/wfs",

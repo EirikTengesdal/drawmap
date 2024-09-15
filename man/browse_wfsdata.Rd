@@ -10,7 +10,7 @@ browse_wfsdata(url, service_version)
 \item{url}{URL to a service from which to retrieve data}
 
 \item{service_version}{Version of the service; it might be necessary to check
-serviceVersion manually at time of request}
+\code{serviceVersion} manually at time of request}
 }
 \value{
 A data.frame (\code{pretty = TRUE}) containing available feature
@@ -21,5 +21,5 @@ A data.frame (\code{pretty = TRUE}) containing available feature
 \code{OWS4R::WFSClient()}.
 }
 \seealso{
-[load_wfsdata()], [load_maps_data()]
+\code{load_wfsdata()}, \code{load_maps_data()}
 }

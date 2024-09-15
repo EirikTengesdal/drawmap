@@ -31,5 +31,5 @@ norway <- load_maps_data(countries = "Norway")
 europe <- load_maps_data()
 }
 \seealso{
-[browse_wfsdata()], [load_wfsdata()]
+\code{browse_wfsdata()}, \code{load_wfsdata()}
 }

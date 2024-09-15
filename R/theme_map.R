@@ -8,7 +8,7 @@
 #' @importFrom ggplot2 %+replace%
 #' @export
 #'
-#' @seealso [draw()]
+#' @seealso \code{draw()}
 theme_map <- function(font = "", size = 12) {
   ggplot2::theme_void() %+replace%
 
