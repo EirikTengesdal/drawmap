@@ -1,20 +1,32 @@
-#' `get_map_data`: Retrieve data via URL service
+#' Retrieve geospatial data via URL service
 #'
-#' @param url URL to a service from which to retrieve data
-#' @param service `service` list attribute for `httr2::url_parse`, default is `wfs`
-#' @param version `version` list attribute for `httr2::url_parse`, default is `NULL`
-#' @param request `request` list attribute for `httr2::url_parse`, default is `GetFeature`
-#' @param typename `typename` list attribute for `httr2::url_parse`, default is `NULL`
-#' @param outname Name of an optional output file with `sf::st_write`, default is `NULL`
-#' @param append Logical, should the output layer be appended to an existing file (`append = TRUE`) or overwrite layer (`append = FALSE`), default is `FALSE`
+#' \code{get_map_data()}: Retrieve data via URL service as an \code{sf} object.
+#' Optionally choose to save a local copy of the data drawing on the
+#' \code{sf::st_write()} function.
 #'
-#' @return An `sf` object
+#' @param url URL to a service from which to retrieve geospatial data
+#' @param service \code{service} list attribute for \code{httr2::url_parse},
+#'   default is \code{wfs}
+#' @param version \code{version} list attribute for \code{httr2::url_parse},
+#'   default is \code{NULL}
+#' @param request \code{request} list attribute for \code{httr2::url_parse},
+#'   default is \code{GetFeature}
+#' @param typename \code{typename} list attribute for \code{httr2::url_parse},
+#'   default is \code{NULL}
+#' @param outname Name of an optional output file with \code{sf::st_write},
+#'   default is \code{NULL}
+#' @param append Logical, should the output layer be appended to an existing
+#'   file (\code{append = TRUE}) or overwrite layer (\code{append = FALSE}),
+#'   default is \code{FALSE}
+#'
+#' @return An \code{sf} object
 #' @export
 #'
+#' @seealso [browse_wfsdata()], [load_wfsdata()]
 #' @examples
-#' get_map_data(url = "https://geo.stat.fi/geoserver/tilastointialueet/wfs",
-#'             typename = "tilastointialueet:kunta1000k",
-#'             outname = "finland_municipalities.shp") -> finland_municipalities
+#' finland_municipalities <- get_map_data(
+#' url = "https://geo.stat.fi/geoserver/tilastointialueet/wfs",
+#' typename = "tilastointialueet:kunta1000k")
 get_map_data <- function(url,
                          service = "wfs",
                          version = NULL,
@@ -32,7 +44,7 @@ get_map_data <- function(url,
   request <- httr2::url_build(url)
   data <- sf::read_sf(request)
 
-  if(!is.null(outname)) {
+  if (!is.null(outname)) {
     sf::st_write(data, outname, append = append)
   }
 
