@@ -14,7 +14,7 @@
 #' @return An \code{sf} object
 #' @export
 #'
-#' @seealso [browse_wfsdata()], [get_map_data()]
+#' @seealso \code{browse_wfsdata()}, \code{get_map_data()}
 #' @examples
 #' load_wfsdata(
 #' url = "https://geo.stat.fi/geoserver/tilastointialueet/wfs",
@@ -26,7 +26,7 @@ load_wfsdata <- function(url = NULL,
   data <- get_map_data(url = url, typename = typename)
 
   if (wgs84) {
-    data <- sf::st_transform(x = data, crs = "EPSG:4326")
+    data <- sf::st_transform(x = data, "EPSG:4326")
   }
 
   if (dissolve) {

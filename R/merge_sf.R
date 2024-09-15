@@ -17,9 +17,6 @@
 #'
 #' @return An \code{sf} object
 #' @export
-#'
-#' @examples
-#' europe <- merge_sf(folder = here::here("data", "raw"))
 merge_sf <- function(folder,
                      layer = "ADM_ADM_0",
                      check_layers = FALSE,
@@ -37,7 +34,7 @@ merge_sf <- function(folder,
   })
 
   if (wgs84) {
-    data <- lapply(data, sf::st_transform, crs = "EPSG:4326")
+    data <- lapply(data, sf::st_transform, "EPSG:4326")
   }
 
   data <- do.call(rbind, data)

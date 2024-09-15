@@ -38,6 +38,3 @@ An \code{sf} object
 combine them into a single \code{sf} object. It is tailored for importing
 downloaded \href{https://gadm.org/}{GADM spatial data}.
 }
-\examples{
-europe <- merge_sf(folder = here::here("data", "raw"))
-}
