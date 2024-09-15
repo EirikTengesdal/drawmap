@@ -5,13 +5,13 @@
 #'
 #' @param url URL to a service from which to retrieve data
 #' @param service_version Version of the service; it might be necessary to check
-#'   serviceVersion manually at time of request
+#'   \code{serviceVersion} manually at time of request
 #'
 #' @return A data.frame (\code{pretty = TRUE}) containing available feature
 #'   types
 #' @export
 #'
-#' @seealso [load_wfsdata()], [load_maps_data()]
+#' @seealso \code{load_wfsdata()}, \code{load_maps_data()}
 browse_wfsdata <- function(url, service_version) {
   data_client <- ows4R::WFSClient$new(url, serviceVersion = service_version)
 
