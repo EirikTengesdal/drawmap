@@ -109,9 +109,10 @@
 #'   \code{NULL}, the function will save the plot as a file.
 #' @export
 #'
-#' @seealso [browse_wfsdata()], [get_map_data()], [harmonise_vars()],
-#'   [load_coordinates()], [load_maps_data()], [load_wfsdata()], [merge_sf()],
-#'   [theme_map()]
+#' @seealso \code{browse_wfsdata()}, \code{get_map_data()},
+#'   \code{harmonise_vars()}, \code{load_coordinates()},
+#'   \code{load_maps_data()}, \code{load_wfsdata()}, \code{merge_sf()},
+#'   \code{theme_map()}
 #' @examples
 #' norway <- load_maps_data(countries = "Norway")
 #'
