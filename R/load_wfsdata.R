@@ -26,7 +26,7 @@ load_wfsdata <- function(url = NULL,
   data <- get_map_data(url = url, typename = typename)
 
   if (wgs84) {
-    data <- sf::st_transform(x = data, "EPSG:4326")
+    data <- sf::st_transform(x = data, crs = "EPSG:4326")
   }
 
   if (dissolve) {

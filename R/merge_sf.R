@@ -34,7 +34,7 @@ merge_sf <- function(folder,
   })
 
   if (wgs84) {
-    data <- lapply(data, sf::st_transform, "EPSG:4326")
+    data <- lapply(data, sf::st_transform, crs = "EPSG:4326")
   }
 
   data <- do.call(rbind, data)
