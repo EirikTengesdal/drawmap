@@ -1,3 +1,3 @@
 # drawmap 0.1.0
 
-* Initial CRAN submission.
+* Initial GitHub submission.
