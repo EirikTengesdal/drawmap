@@ -64,11 +64,9 @@ coordinates <- load_coordinates(
 
 ## Draw map of Norway and surrounding countries
 
-Next, we draw the map using `drawmap::draw()`. We specify the area data for Norway and the other European countries, as well as the colours for the areas and borders. Here, we use the `Minion 3` font for the map, which we specify in the `font` argument after registering it with `grDevices::windowsFonts()`. The resulting map is displayed below.^[Note that the graphics device backend was set to `AGG` in RStudio when rendering this vignette to ensure that the custom font was displayed correctly.] In addition, we add labels for some of the major cities in Norway using the `coordinates` data frame.
+Next, we draw the map using `drawmap::draw()`. We specify the area data for Norway and the other European countries, as well as the colours for the areas and borders. Here, we use the `serif` font for the map. The resulting map is displayed below.^[Note that the graphics device backend was set to `AGG` in RStudio when rendering this vignette to ensure that the custom font was displayed correctly.] In addition, we add labels for some of the major cities in Norway using the `coordinates` data frame.
 
 ```{r draw-map, fig.width = 5.68, fig.height = 6.50, out.width = "100%"}
-grDevices::windowsFonts(`Minion 3` = grDevices::windowsFont("Minion 3"))
-
 p <- draw(
   area_data = norway,
   area_col = "#512888",
@@ -76,7 +74,7 @@ p <- draw(
   other_areas_data = europe,
   other_areas_col = "#ADB0B8",
   other_areas_fill = "#D9DCE6",
-  font = "Minion 3",
+  font = "serif",
   coordinates = coordinates,
   label_repel = TRUE
 )
