@@ -4,6 +4,8 @@
 # drawmap <a href="https://eiriktengesdal.github.io/drawmap/"><img src="man/figures/logo_1200dpi.png" align="right" height="139" alt="drawmap website"/></a>
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/EirikTengesdal/drawmap/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/EirikTengesdal/drawmap/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of `drawmap` is to draw maps in R easily. The package provides
