@@ -66,7 +66,7 @@ load_coordinates <- function(
     coordinates,
     coords = col_order,
     remove = FALSE,
-    crs = 4326,
+    crs = "EPSG:4326",
     agr = "constant"
   )
 
