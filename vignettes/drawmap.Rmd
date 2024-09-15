@@ -74,7 +74,7 @@ p <- draw(
   other_areas_data = europe,
   other_areas_col = "#ADB0B8",
   other_areas_fill = "#D9DCE6",
-  font = "serif",
+  font = "sans",
   coordinates = coordinates,
   label_repel = TRUE
 )
