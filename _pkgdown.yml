@@ -1,4 +1,9 @@
 url: https://eiriktengesdal.github.io/drawmap/
+
+authors:
+  Eirik Tengesdal:
+    href: https://eiriktengesdal.no/
+
 template:
   bootstrap: 5
   light-switch: true
