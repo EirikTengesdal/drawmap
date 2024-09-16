@@ -6,7 +6,7 @@
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/EirikTengesdal/drawmap/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/EirikTengesdal/drawmap/actions/workflows/R-CMD-check.yaml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![DOI](https://zenodo.org/badge/851192231.svg)](https://zenodo.org/doi/10.5281/zenodo.13768420)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13768420.svg)](https://zenodo.org/doi/10.5281/zenodo.13768420)
 <!-- badges: end -->
 
 The goal of `drawmap` is to draw maps in R easily. The package provides
