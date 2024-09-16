@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# drawmap <a href="https://eiriktengesdal.github.io/drawmap/"><img src="man/figures/logo_1200dpi.png" align="right" height="139" alt="drawmap website"/></a>
+# drawmap <a href="https://eiriktengesdal.github.io/drawmap/"><img src="man/figures/logo.png" align="right" height="150" alt="drawmap website"/></a>
 
 <!-- badges: start -->
 
