@@ -1,0 +1,20 @@
+cff-version: 1.0.0
+title: drawmap
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Eirik
+    family-names: Tengesdal
+    email: eirik.tengesdal@oslomet.no
+    affiliation: OsloMet – Oslo Metropolitan University
+    orcid: 'https://orcid.org/0000-0003-0599-8925'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.13768421
+    description: The URL of version 1.0.0 of the software.
+repository-code: 'https://github.com/EirikTengesdal/drawmap'
+license: MIT
+version: 1.0.0
+date-released: '2024-09-16'
