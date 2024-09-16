@@ -42,7 +42,6 @@ You can install the development version of `drawmap` from
 # Using `pak`:
 # install.packages("pak")
 pak::pak("EirikTengesdal/drawmap")
-
 # Using `remotes`:
 # install.packages("remotes")
 remotes::install_github("EirikTengesdal/drawmap")
@@ -54,7 +53,6 @@ remotes::install_github("EirikTengesdal/drawmap")
 library(drawmap)
 norway <- load_maps_data(countries = "Norway")
 europe <- load_maps_data()
-
 p <- draw(
   area_data = norway,
   area_col = "#512888",
@@ -68,4 +66,4 @@ p <- draw(
 
 This yields a map like the one used in the `drawmap` package logo:
 
-<img src="man/figures/README-map-1.png" width="50%" style="display: block; margin: auto;" />
+<img src="man/figures/README-map-1.png" alt="Map depicting Norway and the surrounding countries." width="100%" style="display: block; margin: auto;" />

@@ -21,7 +21,10 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/EirikTengesdal/drawmap/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/EirikTengesdal/drawmap/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of `drawmap` is to draw maps in R easily. The package provides a simple interface to draw maps with a uniform style, and is particularly useful for drawing maps with multiple layers, such as countries, regions, and points of interest. The package provides the following functions:
+The goal of `drawmap` is to draw maps in R easily. The package provides a simple
+interface to draw maps with a uniform style, and is particularly useful for
+drawing maps with multiple layers, such as countries, regions, and points of
+interest. The package provides the following functions:
 
 - `draw()`: Draw a map.
 - `load_maps_data()`: Load map data using `maps::map()`.
@@ -33,17 +36,19 @@ The goal of `drawmap` is to draw maps in R easily. The package provides a simple
 - `harmonise_vars()`: Harmonise specified variables across `sf` objects.
 - `theme_map()`: Specify `ggplot2` custom theme for `drawmap::draw()` (font and size).
 
-The package is built on top of the `ggplot2` and `sf` packages. It accepts different types of spatial data, such as `sf` objects and `data.frame` objects with longitude and latitude columns.
+The package is built on top of the `ggplot2` and `sf` packages. It accepts
+different types of spatial data, such as `sf` objects and `data.frame` objects
+with longitude and latitude columns.
 
 ## Installation
 
-You can install the development version of `drawmap` from [GitHub](https://github.com/) with `pak::pak()` or `remotes::install_github()`:
+You can install the development version of `drawmap` from
+[GitHub](https://github.com/) with `pak::pak()` or `remotes::install_github()`:
 
 ```r
 # Using `pak`:
 # install.packages("pak")
 pak::pak("EirikTengesdal/drawmap")
-
 # Using `remotes`:
 # install.packages("remotes")
 remotes::install_github("EirikTengesdal/drawmap")
@@ -55,7 +60,6 @@ remotes::install_github("EirikTengesdal/drawmap")
 library(drawmap)
 norway <- load_maps_data(countries = "Norway")
 europe <- load_maps_data()
-
 p <- draw(
   area_data = norway,
   area_col = "#512888",
@@ -69,6 +73,8 @@ p <- draw(
 
 This yields a map like the one used in the `drawmap` package logo:
 
-```{r map, fig.width = 5.68, fig.height = 6.50, out.width = "50%", echo = FALSE}
+```{r map, fig.width = 5.68, fig.height = 6.50, out.width = "100%", echo = FALSE}
+#| fig.alt: >
+#|   Map depicting Norway and the surrounding countries.
 p
 ```
