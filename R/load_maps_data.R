@@ -31,9 +31,8 @@ load_maps_data <- function(countries = c("Sweden",
     data <- maps::map(region = countries,
                       plot = FALSE,
                       fill = TRUE)
-    data <- sf::st_as_sf(data)
-
     if (wgs84) {
+      data <- sf::st_as_sf(data)
       data <- sf::st_transform(x = data, crs = "EPSG:4326")
     }
     return(data)
@@ -42,9 +41,8 @@ load_maps_data <- function(countries = c("Sweden",
       country_data <- maps::map(region = country,
                                 plot = FALSE,
                                 fill = TRUE)
-      country_data <- sf::st_as_sf(country_data)
-
       if (wgs84) {
+        country_data <- sf::st_as_sf(country_data)
         country_data <- sf::st_transform(x = country_data, crs = "EPSG:4326")
       }
       datalist[[country]] <- country_data
