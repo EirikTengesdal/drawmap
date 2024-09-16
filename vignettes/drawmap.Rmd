@@ -2,7 +2,7 @@
 title: "Introduction to drawmap"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{drawmap}
+  %\VignetteIndexEntry{Introduction to drawmap}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -26,11 +26,20 @@ In this vignette, we will demonstrate how to draw a map of Norway and surroundin
 
 ### Load map data
 
-Firstly, we load the map data for Norway and surrounding European countries using `drawmap::load_maps_data()`.
+Firstly, we load the map data for Norway and surrounding European countries.
 
 ```{r load-map-data}
-norway <- load_maps_data(countries = "Norway")
-europe <- load_maps_data()
+norway <- sf::st_as_sf(maps::map(region = "Norway", plot = FALSE, fill = TRUE))
+norway <- sf::st_transform(norway, crs = 4326)
+
+europe <- sf::st_as_sf(maps::map(region = c("Sweden",
+                                            "Denmark",
+                                            "Russia",
+                                            "Estonia",
+                                            "Latvia",
+                                            "Lithuania",
+                                            "Finland"), plot = FALSE, fill = TRUE))
+europe <- sf::st_transform(europe, crs = 4326)
 ```
 
 ### Create a data frame with place names and coördinates
