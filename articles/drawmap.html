@@ -76,9 +76,7 @@
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/EirikTengesdal/drawmap" class="external-link">drawmap</a></span><span class="op">)</span></span></code></pre></div>
 <p>In this vignette, we will demonstrate how to draw a map of Norway and
-surrounding countries with <code><a href="../reference/draw.html">drawmap::draw()</a></code>. It is more
-advanced than the example in the README, as we will use a custom font
-for the map and also label the map with place names.</p>
+surrounding countries with <code><a href="../reference/draw.html">drawmap::draw()</a></code>.</p>
 <div class="section level2">
 <h2 id="load-data">Load data<a class="anchor" aria-label="anchor" href="#load-data"></a>
 </h2>
@@ -131,7 +129,7 @@ use and customise the &lt;code&gt;&lt;a href="../reference/load_coordinates.html
 <p>Next, we draw the map using <code><a href="../reference/draw.html">drawmap::draw()</a></code>. We specify
 the area data for Norway and the other European countries, as well as
 the colours for the areas and borders. Here, we use the
-<code>serif</code> font for the map. The resulting map is displayed
+<code>sans</code> font for the map. The resulting map is displayed
 below.<a class="footnote-ref" tabindex="0" data-bs-toggle="popover" data-bs-content="&lt;p&gt;Note that the graphics device backend was set to
 &lt;code&gt;AGG&lt;/code&gt; in RStudio when rendering this vignette to ensure that
 the custom font was displayed correctly.&lt;/p&gt;"><sup>2</sup></a>
@@ -152,7 +150,7 @@ the <code>coordinates</code> data frame.</p>
 <span></span>
 <span><span class="va">p</span></span>
 <span><span class="co">#&gt; Scale on map varies by more than 10%, scale bar may be inaccurate</span></span></code></pre></div>
-<p><img src="drawmap_files/figure-html/draw-map-1.png" width="100%" style="display: block; margin: auto;"></p>
+<p><img src="drawmap_files/figure-html/draw-map-1.png" alt="Map of Norway, with labels for some of the major cities, and surrounding countries." width="100%" style="display: block; margin: auto;"></p>
 </div>
 
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
@@ -162,7 +160,7 @@ the <code>coordinates</code> data frame.</p>
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by Eirik Tengesdal.</p>
+  <p>Developed by <a href="https://eiriktengesdal.no/" class="external-link">Eirik Tengesdal</a>.</p>
 </div>
 
 <div class="pkgdown-footer-right">

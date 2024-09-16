@@ -100,7 +100,6 @@
 <code class="sourceCode R"><span><span class="co"># Using `pak`:</span></span>
 <span><span class="co"># install.packages("pak")</span></span>
 <span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"EirikTengesdal/drawmap"</span><span class="op">)</span></span>
-<span></span>
 <span><span class="co"># Using `remotes`:</span></span>
 <span><span class="co"># install.packages("remotes")</span></span>
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"EirikTengesdal/drawmap"</span><span class="op">)</span></span></code></pre></div>
@@ -112,7 +111,6 @@
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/EirikTengesdal/drawmap" class="external-link">drawmap</a></span><span class="op">)</span></span>
 <span><span class="va">norway</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/load_maps_data.html">load_maps_data</a></span><span class="op">(</span>countries <span class="op">=</span> <span class="st">"Norway"</span><span class="op">)</span></span>
 <span><span class="va">europe</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/load_maps_data.html">load_maps_data</a></span><span class="op">(</span><span class="op">)</span></span>
-<span></span>
 <span><span class="va">p</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/draw.html">draw</a></span><span class="op">(</span></span>
 <span>  area_data <span class="op">=</span> <span class="va">norway</span>,</span>
 <span>  area_col <span class="op">=</span> <span class="st">"#512888"</span>,</span>
@@ -123,7 +121,7 @@
 <span>  annotation_scale <span class="op">=</span> <span class="cn">FALSE</span></span>
 <span><span class="op">)</span></span></code></pre></div>
 <p>This yields a map like the one used in the <code>drawmap</code> package logo:</p>
-<p><img src="reference/figures/README-map-1.png" width="50%" style="display: block; margin: auto;"></p>
+<p><img src="reference/figures/README-map-1.png" alt="Map depicting Norway and the surrounding countries." width="100%" style="display: block; margin: auto;"></p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
@@ -153,7 +151,8 @@
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>Eirik Tengesdal <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-0599-8925" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>
+<a href="https://eiriktengesdal.no/" class="external-link">Eirik Tengesdal</a> <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-0599-8925" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 </ul>
 </div>
 
@@ -169,7 +168,7 @@
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by Eirik Tengesdal.</p>
+  <p>Developed by <a href="https://eiriktengesdal.no/" class="external-link">Eirik Tengesdal</a>.</p>
 </div>
 
 <div class="pkgdown-footer-right">
