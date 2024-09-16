@@ -86,10 +86,19 @@ for the map and also label the map with place names.</p>
 <h3 id="load-map-data">Load map data<a class="anchor" aria-label="anchor" href="#load-map-data"></a>
 </h3>
 <p>Firstly, we load the map data for Norway and surrounding European
-countries using <code><a href="../reference/load_maps_data.html">drawmap::load_maps_data()</a></code>.</p>
+countries.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">norway</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/load_maps_data.html">load_maps_data</a></span><span class="op">(</span>countries <span class="op">=</span> <span class="st">"Norway"</span><span class="op">)</span></span>
-<span><span class="va">europe</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/load_maps_data.html">load_maps_data</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">norway</span> <span class="op">&lt;-</span> <span class="fu">sf</span><span class="fu">::</span><span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_as_sf.html" class="external-link">st_as_sf</a></span><span class="op">(</span><span class="fu">maps</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/maps/man/map.html" class="external-link">map</a></span><span class="op">(</span>region <span class="op">=</span> <span class="st">"Norway"</span>, plot <span class="op">=</span> <span class="cn">FALSE</span>, fill <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">norway</span> <span class="op">&lt;-</span> <span class="fu">sf</span><span class="fu">::</span><span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_transform.html" class="external-link">st_transform</a></span><span class="op">(</span><span class="va">norway</span>, crs <span class="op">=</span> <span class="fl">4326</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">europe</span> <span class="op">&lt;-</span> <span class="fu">sf</span><span class="fu">::</span><span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_as_sf.html" class="external-link">st_as_sf</a></span><span class="op">(</span><span class="fu">maps</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/maps/man/map.html" class="external-link">map</a></span><span class="op">(</span>region <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Sweden"</span>,</span>
+<span>                                            <span class="st">"Denmark"</span>,</span>
+<span>                                            <span class="st">"Russia"</span>,</span>
+<span>                                            <span class="st">"Estonia"</span>,</span>
+<span>                                            <span class="st">"Latvia"</span>,</span>
+<span>                                            <span class="st">"Lithuania"</span>,</span>
+<span>                                            <span class="st">"Finland"</span><span class="op">)</span>, plot <span class="op">=</span> <span class="cn">FALSE</span>, fill <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">europe</span> <span class="op">&lt;-</span> <span class="fu">sf</span><span class="fu">::</span><span class="fu"><a href="https://r-spatial.github.io/sf/reference/st_transform.html" class="external-link">st_transform</a></span><span class="op">(</span><span class="va">europe</span>, crs <span class="op">=</span> <span class="fl">4326</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="create-a-data-frame-with-place-names-and-coördinates">Create a data frame with place names and coördinates<a class="anchor" aria-label="anchor" href="#create-a-data-frame-with-place-names-and-co%C3%B6rdinates"></a>
