@@ -1,4 +1,4 @@
-cff-version: 1.0.0
+cff-version: 1.1.0
 title: drawmap
 message: >-
   If you use this software, please cite it using the
@@ -12,9 +12,9 @@ authors:
     orcid: 'https://orcid.org/0000-0003-0599-8925'
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.13768421
-    description: The URL of version 1.0.0 of the software.
+    value: 10.5281/zenodo.13768601
+    description: The URL of version 1.1.0 of the software.
 repository-code: 'https://github.com/EirikTengesdal/drawmap'
 license: MIT
-version: 1.0.0
+version: 1.1.0
 date-released: '2024-09-16'
