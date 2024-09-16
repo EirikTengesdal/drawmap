@@ -23,7 +23,7 @@ Imports:
     ragg,
     rlang,
     rmapshaper,
-    sf,
+    sf (== 1.0-14),
     tidyr
 Suggests: 
     knitr,
