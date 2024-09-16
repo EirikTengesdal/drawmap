@@ -2,9 +2,9 @@
 title: "Introduction to drawmap"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Introduction to drawmap}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+    %\VignetteIndexEntry{Introduction to drawmap}
+    %\VignetteEngine{knitr::rmarkdown}
+    %\VignetteEncoding{UTF-8}
 ---
 
 ```{r, include = FALSE}
@@ -20,13 +20,15 @@ knitr::opts_chunk$set(
 library(drawmap)
 ```
 
-In this vignette, we will demonstrate how to draw a map of Norway and surrounding countries with `drawmap::draw()`. It is more advanced than the example in the README, as we will use a custom font for the map and also label the map with place names.
+In this vignette, we will demonstrate how to draw a map of Norway and
+surrounding countries with `drawmap::draw()`.
 
 ## Load data
 
 ### Load map data
 
-Firstly, we load the map data for Norway and surrounding European countries with `load_maps_data()`.
+Firstly, we load the map data for Norway and surrounding European countries with
+`load_maps_data()`.
 
 ```{r load-map-data}
 norway <- load_maps_data(countries = "Norway")
@@ -35,7 +37,11 @@ europe <- load_maps_data()
 
 ### Create a data frame with place names and coördinates
 
-Secondly, we create a data frame with place names and their coördinates in WGS84 format. We will use this data frame to label the map with place names.^[Note that the `Coordinates_WGS84` column contains the latitude and longitude of the places separated by a comma. The data frame is constructed in this fashion also to illustrate how to use and customise the `load_coordinates()` function.]
+Secondly, we create a data frame with place names and their coördinates in WGS84
+format. We will use this data frame to label the map with place names.^[Note
+that the `Coordinates_WGS84` column contains the latitude and longitude of the
+places separated by a comma. The data frame is constructed in this fashion also
+to illustrate how to use and customise the `load_coordinates()` function.]
 
 ```{r coordinates}
 places <- data.frame(
@@ -64,9 +70,18 @@ coordinates <- load_coordinates(
 
 ## Draw map of Norway and surrounding countries
 
-Next, we draw the map using `drawmap::draw()`. We specify the area data for Norway and the other European countries, as well as the colours for the areas and borders. Here, we use the `serif` font for the map. The resulting map is displayed below.^[Note that the graphics device backend was set to `AGG` in RStudio when rendering this vignette to ensure that the custom font was displayed correctly.] In addition, we add labels for some of the major cities in Norway using the `coordinates` data frame.
+Next, we draw the map using `drawmap::draw()`. We specify the area data for
+Norway and the other European countries, as well as the colours for the areas
+and borders. Here, we use the `sans` font for the map. The resulting map is
+displayed below.^[Note that the graphics device backend was set to `AGG` in
+RStudio when rendering this vignette to ensure that the custom font was
+displayed correctly.] In addition, we add labels for some of the major cities in
+Norway using the `coordinates` data frame.
 
 ```{r draw-map, fig.width = 5.68, fig.height = 6.50, out.width = "100%"}
+#| fig.alt: >
+#|   Map of Norway, with labels for some of the major cities, and surrounding
+#|   countries.
 p <- draw(
   area_data = norway,
   area_col = "#512888",
