@@ -4,8 +4,9 @@
 # drawmap <a href="https://eiriktengesdal.github.io/drawmap/"><img src="man/figures/logo.png" align="right" height="150" alt="drawmap website"/></a>
 
 <!-- badges: start -->
-
 [![R-CMD-check](https://github.com/EirikTengesdal/drawmap/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/EirikTengesdal/drawmap/actions/workflows/R-CMD-check.yaml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://zenodo.org/badge/851192231.svg)](https://zenodo.org/doi/10.5281/zenodo.13768420)
 <!-- badges: end -->
 
 The goal of `drawmap` is to draw maps in R easily. The package provides
@@ -69,8 +70,6 @@ This yields a map like the one used in the `drawmap` package logo:
 <img src="man/figures/README-map-1.png" alt="Map depicting Norway and the surrounding countries." width="100%" style="display: block; margin: auto;" />
 
 ## License and copyright
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 © 2024 Eirik Tengesdal
 
 Licensed under the [MIT License](LICENSE.md).
