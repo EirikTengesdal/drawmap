@@ -67,3 +67,23 @@ p <- draw(
 This yields a map like the one used in the `drawmap` package logo:
 
 <img src="man/figures/README-map-1.png" alt="Map depicting Norway and the surrounding countries." width="100%" style="display: block; margin: auto;" />
+
+## License and copyright
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+© 2024 Eirik Tengesdal
+
+Licensed under the [MIT License](LICENSE.md).
+
+## Author
+[Eirik Tengesdal](https://eiriktengesdal.no/)  
+Assistant Professor of Norwegian  
+[Department of Early Childhood Education (BLU)](https://www.oslomet.no/en/about/employee/eiten9710/)  
+OsloMet – Oslo Metropolitan University  
+eirik.tengesdal@oslomet.no
+
+Guest Researcher and PhD Student  
+[Department of Linguistics and Scandinavian Studies (ILN)](https://www.hf.uio.no/iln/english/people/aca/scandinavian-languages/temporary/eirikten/)  
+University of Oslo  
+eirik.tengesdal@iln.uio.no  
+ORCID iD: [0000-0003-0599-8925](https://orcid.org/0000-0003-0599-8925)
